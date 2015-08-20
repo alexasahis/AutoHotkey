@@ -25,7 +25,7 @@
 
 // Includes
 #include <windows.h>
-
+#pragma warning(disable: 4996)
 class OS_Version
 {
 public:

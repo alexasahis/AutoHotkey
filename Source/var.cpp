@@ -1147,7 +1147,7 @@ ResultType Var::ValidateName(char *aName, bool aIsRuntime, int aDisplayError)
 		// used characters in variables names:
 		c = *cp;  // For performance.
 		if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < '0' || c > '9') // It's not a core/legacy alphanumberic.
-			&& c >= 0 // It's not an extended ASCII character such as €/¶/¿ (for simplicity and backward compatibility, these are always allowed).
+			&& c >= 0 // It's not an extended ASCII character such as €/??(for simplicity and backward compatibility, these are always allowed).
 			&& !strchr("_[]$?#@", c)) // It's not a permitted punctunation mark.
 		{
 			if (aDisplayError)

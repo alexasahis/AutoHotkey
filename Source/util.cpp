@@ -763,7 +763,7 @@ ret0:
 
 char *lstrcasestr(const char *phaystack, const char *pneedle)
 // This is the locale-obeying variant of strcasestr.  It uses CharUpper/Lower in place of toupper/lower,
-// which sees chars like ä as the same as Ä (depending on code page/locale).  This function is about
+// which sees chars like ?as the same as ?(depending on code page/locale).  This function is about
 // 1 to 8 times slower than strcasestr() depending on factors such as how many partial matches for needle
 // are in haystack.
 // License: GNU GPL

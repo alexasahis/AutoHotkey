@@ -1,0 +1,9 @@
+Backup/
+Debug/
+Release/
+*.suo
+*.user
+*.ncb
+*.aps
+*.sdf
+*.opensdf
